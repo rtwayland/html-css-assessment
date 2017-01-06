@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
@@ -14,11 +13,13 @@ nav {
 }
 
 nav .hamburger-icon {
-  width: 50px;
-  height: 50px;
-  border: 1px solid white;
-  margin: 5px 0 0 5px;
+  margin: 10px 0 0 15px;
   display: inline-block;
+}
+
+nav .hamburger-icon .glyphicon-menu-hamburger {
+  color: white;
+  font-size: 2.5em;
 }
 
 @media screen and (min-width: 691px) {
@@ -28,11 +29,14 @@ nav .hamburger-icon {
 }
 
 nav .social-icons {
-  width: 100px;
-  height: 50px;
-  border: 1px solid white;
-  margin: 5px 5px 0 0;
+  margin: 20px 20px 0 0;
   float: right;
+}
+
+nav .social-icons .fa {
+  color: white;
+  padding-left: 50px;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 691px) {
@@ -77,23 +81,26 @@ nav ul li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.initial-background .banner-heading h1 {
   text-align: center;
   color: white;
-  font-size: 70px;
+  font-size: 120px;
   line-height: 45px;
 }
 
-.initial-background .banner-heading span {
+.initial-background .banner-heading h1 span {
   font-size: 40px;
 }
 
 @media screen and (max-width: 690px) {
-  .initial-background .banner-heading {
-    font-size: 50px;
-    line-height: 25px;
+  .initial-background .banner-heading h1 {
+    font-size: 120px;
+    line-height: 30px;
   }
-  .initial-background .banner-heading span {
-    font-size: 25px;
+  .initial-background .banner-heading h1 span {
+    font-size: 30px;
   }
 }
 

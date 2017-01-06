@@ -12,7 +12,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body {
@@ -25,22 +24,27 @@ nav {
     width: 100%;
 
     .hamburger-icon {
-        width: 50px;
-        height: 50px;
-        border: 1px solid white;
-        margin: 5px 0 0 5px;
+        margin: 10px 0 0 15px;
         display: inline-block;
+
+        .glyphicon-menu-hamburger {
+            color: white;
+            font-size: 2.5em;
+        }
         @media screen and (min-width: 691px) {
             display: none;
         }
     }
 
     .social-icons {
-        width: 100px;
-        height: 50px;
-        border: 1px solid white;
-        margin: 5px 5px 0 0;
+        margin: 20px 20px 0 0;
         float: right;
+
+        .fa {
+            color: white;
+            padding-left: 50px;
+            font-size: 1.5em;
+        }
         @media screen and (min-width: 691px) {
             display: none;
         }
@@ -76,20 +80,23 @@ nav {
 
     .banner-heading {
         @include absolute-center;
-        text-align: center;
-        color: white;
-        font-size: 70px;
-        line-height: 45px;
 
-        span {
-            font-size: 40px;
-        }
-        @media screen and (max-width: 690px) {
-            font-size: 50px;
-            line-height: 25px;
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 120px;
+            line-height: 45px;
 
             span {
-                font-size: 25px;
+                font-size: 40px;
+            }
+            @media screen and (max-width: 690px) {
+                font-size: 120px;
+                line-height: 30px;
+
+                span {
+                    font-size: 30px;
+                }
             }
         }
     }
