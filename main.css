@@ -32,10 +32,49 @@ body {
   font-size: 40px;
 }
 
+.initial-background .down-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 20px;
+}
+
 nav {
   position: fixed;
   z-index: 100;
   width: 100%;
+}
+
+nav .hamburger-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  margin: 5px 0 0 5px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 701px) {
+  nav .hamburger-icon {
+    display: none;
+  }
+}
+
+nav .social-icons {
+  width: 100px;
+  height: 50px;
+  border: 1px solid white;
+  margin: 5px 5px 0 0;
+  float: right;
+}
+
+@media screen and (min-width: 701px) {
+  nav .social-icons {
+    display: none;
+  }
 }
 
 nav ul {
@@ -51,4 +90,10 @@ nav ul li {
   font-size: 22px;
   display: inline-block;
   width: calc(100%/3);
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+  }
 }
